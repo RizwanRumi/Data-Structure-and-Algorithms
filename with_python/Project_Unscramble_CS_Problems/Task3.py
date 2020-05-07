@@ -45,6 +45,8 @@ to other fixed lines in Bangalore."
 The percentage should have 2 decimal digits
 """
 
+# Part A
+
 bangalore_list = set()
 
 for call_number in calls:
@@ -60,5 +62,16 @@ print("The numbers called by people in Bangalore have codes:")
 for number in lexicographic_numbers:
     print(number)
 
+# Part B
 
+total_calls = len(calls)
 
+count = 0
+for call_number in calls:
+    if "(080)" in call_number[0] and "(080)" in call_number[1]:
+        count += 1
+
+percentage_of_fixed_call = (100 * count) / total_calls
+
+print("{:.2f} percent of calls from fixed lines in Bangalore are calls\
+ to other fixed lines in Bangalore.".format(percentage_of_fixed_call))
