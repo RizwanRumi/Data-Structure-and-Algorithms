@@ -38,12 +38,12 @@ print("There are {0} different telephone numbers in the records.".format(len(uni
 
 unique_numbers = set()
 
-for text_number in texts:
-    unique_numbers.add(text_number[0])
-    unique_numbers.add(text_number[1])
+for textNumber in texts:
+    unique_numbers.add(textNumber[0])
+    unique_numbers.add(textNumber[1])
 
-for call_number in calls:
-    unique_numbers.add(call_number[0])
-    unique_numbers.add(call_number[1])
+for callNumber in calls:
+    unique_numbers.add(callNumber[0])
+    unique_numbers.add(callNumber[1])
 
 print("There are {0} different telephone numbers in the records.".format(len(unique_numbers)))

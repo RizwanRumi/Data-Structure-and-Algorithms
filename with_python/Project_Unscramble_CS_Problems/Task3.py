@@ -49,11 +49,11 @@ The percentage should have 2 decimal digits
 
 bangalore_list = set()
 
-for call_number in calls:
-    if "(080)" in call_number[0]:
-        bangalore_list.add(call_number[0])
-    if "(080)" in call_number[1]:
-        bangalore_list.add(call_number[1])
+for callNumber in calls:
+    if "(080)" in callNumber[0]:
+        bangalore_list.add(callNumber[0])
+    if "(080)" in callNumber[1]:
+        bangalore_list.add(callNumber[1])
 
 lexicographic_numbers = list(bangalore_list)
 lexicographic_numbers.sort()
@@ -67,8 +67,8 @@ for number in lexicographic_numbers:
 total_calls = len(calls)
 
 count = 0
-for call_number in calls:
-    if "(080)" in call_number[0] and "(080)" in call_number[1]:
+for callNumber in calls:
+    if "(080)" in callNumber[0] and "(080)" in callNumber[1]:
         count += 1
 
 percentage_of_fixed_call = (100 * count) / total_calls
