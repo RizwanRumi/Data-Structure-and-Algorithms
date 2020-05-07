@@ -19,6 +19,7 @@ Print a message:
 "There are <count> different telephone numbers in the records."
 """
 
+'''
 telephone_list = []
 
 for text_number in texts:
@@ -30,5 +31,19 @@ for call_number in calls:
     telephone_list.append(call_number[1])
 
 unique_numbers = set(telephone_list)
+
+print("There are {0} different telephone numbers in the records.".format(len(unique_numbers)))
+
+'''
+
+unique_numbers = set()
+
+for text_number in texts:
+    unique_numbers.add(text_number[0])
+    unique_numbers.add(text_number[1])
+
+for call_number in calls:
+    unique_numbers.add(call_number[0])
+    unique_numbers.add(call_number[1])
 
 print("There are {0} different telephone numbers in the records.".format(len(unique_numbers)))
