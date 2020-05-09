@@ -3,6 +3,7 @@ Read file into texts and calls.
 It's ok if you don't understand how to read files.
 """
 import csv
+
 with open('texts.csv', 'r') as f:
     reader = csv.reader(f)
     texts = list(reader)
@@ -10,7 +11,6 @@ with open('texts.csv', 'r') as f:
 with open('calls.csv', 'r') as f:
     reader = csv.reader(f)
     calls = list(reader)
-
 
 """
 TASK 0:
@@ -23,7 +23,10 @@ Print messages:
 text_record = texts[0]
 call_record = calls[-1]
 
-print("First record of texts, " + text_record[0] + " texts " + text_record[1] + " at time " + text_record[2])
-print("Last record of calls, " + call_record[0] + " calls " + call_record[1] + " at time " + call_record[2] +
-      ", lasting " + call_record[3] + " seconds")
+# print("First record of texts, " + text_record[0] + " texts " + text_record[1] + " at time " + text_record[2])
+# print("Last record of calls, " + call_record[0] + " calls " + call_record[1] + " at time " + call_record[2] +
+#      ", lasting " + call_record[3] + " seconds")
 
+print("First record of texts, {} texts {} at time {}".format(text_record[0], text_record[1], text_record[2]))
+print("Last record of calls, {} calls {} at time {}, lasting {} seconds".format(call_record[0], call_record[1],
+                                                                                call_record[2], call_record[3]))
