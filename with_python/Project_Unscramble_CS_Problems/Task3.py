@@ -47,31 +47,35 @@ The percentage should have 2 decimal digits
 
 # Part A
 
-bangalore_list = set()
+code_list = set()
+total_calls_from_bangalore = 0
 
 for callNumber in calls:
     if "(080)" in callNumber[0]:
-        bangalore_list.add(callNumber[0])
-    if "(080)" in callNumber[1]:
-        bangalore_list.add(callNumber[1])
+        code_number = callNumber[1]
+        if "(0" in code_number:
+            code_list.add(code_number.split(")")[0][1:])
+        elif " " in code_number:
+            code_list.add(code_number.split(" ")[0])
+        elif "140" in code_number[:3]:
+            code_list.add(code_number)
 
-lexicographic_numbers = list(bangalore_list)
-lexicographic_numbers.sort()
+        total_calls_from_bangalore += 1
+
 
 print("The numbers called by people in Bangalore have codes:")
-for number in lexicographic_numbers:
+for number in sorted(code_list):
     print(number)
 
 # Part B
 
-total_calls = len(calls)
+total_calls_from_fixed_lines_in_bangalore = 0
 
-count = 0
 for callNumber in calls:
     if "(080)" in callNumber[0] and "(080)" in callNumber[1]:
-        count += 1
+        total_calls_from_fixed_lines_in_bangalore += 1
 
-percentage_of_fixed_call = (100 * count) / total_calls
+percentage_of_fixed_call = (total_calls_from_fixed_lines_in_bangalore * 100) / total_calls_from_bangalore
 
 print("{:.2f} percent of calls from fixed lines in Bangalore are calls\
  to other fixed lines in Bangalore.".format(percentage_of_fixed_call))

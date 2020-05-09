@@ -1,38 +1,45 @@
 
 # run time analysis for Worst-Case Big-O Notation
 
-Task 0:  O(1) + O(1) = 2
+Task 0:  worst case will be O(1) because of directly retrieving first and last records using index.
 
 Task 1:
-    for first loop : O(2+9072n + 1) = O(9074n + 1)
-    for second loop : O(2+5213n + 1) = O(5215n + 1)
+    for first loop : O(n)
+    for second loop : O(n)
 
-    total = O(9074n + 1) + O(5215n + 1)
+    total = O(2n)
+
+    worst case will be O(n)
 
 Task 2:
-    for loop : O(1+5213n + 1)
-    for max() : O(5213n)
+    for loop : O(n)
+    for nested loop : O(n*n)
+    for max() : O(n)
 
-    total = O(5214n + 1) + O(5213n)
+    total = O(2n)+ O(n*n) => O(n(2+n))
+
+    worst case will be O(n_square)
 
 Task 3:
-    Part A:
-        for loop : O(4+5213n + 1)
-        list : O(n)
-        sort : O(n)
-        for loop : O((1+ list of numbers)n + 1)
+    for 1st loop : O(n)
+    sort = O(n log(n))
+    for 2nd loop : O(n)
+    for 3rd loop : O(n)
 
-        total = O(4+5213n + 1) + O(n) + O(n) + O((1+ list of numbers) * n + 1)
+    total = O(3n) + O(n log(n)) => O(n(3+log(n))
 
-    Part B:
-        total O(2n + 4)
+    worst case will be O(n)
+
 
 Task 4:
-    for 1st loop : O(3n + 2)
-    for 2nd loop : O(1n + 1)
-    for 3rd loop : O(2n)
-    for 4th loop : O(1*n*n)
-    for sort : O(n)
-    for 5th loop: O((1 + sorted list of numbers) * n + 1)
+    for 1st loop : O(n)
+    for 2nd loop : O(n)
+    for 3rd loop : O(n)
+    for sort : O(n log(n))
+    for 4th loop : O(n)
 
-    total = O(3n + 2) + O(1n + 1) + O(2n) + O(1*n*n) + O(n) + O((1 + sorted list of numbers) * n + 1)
+    total = O(4n) + O(n log(n))
+
+    worst case will be O(n)
+
+
