@@ -56,7 +56,7 @@ for callNumber in calls:
         if "(0" in code_number:
             code_list.add(code_number.split(")")[0][1:])
         elif " " in code_number:
-            code_list.add(code_number.split(" ")[0])
+            code_list.add(code_number.split(" ")[0][:4])
         elif "140" in code_number[:3]:
             code_list.add(code_number)
 
