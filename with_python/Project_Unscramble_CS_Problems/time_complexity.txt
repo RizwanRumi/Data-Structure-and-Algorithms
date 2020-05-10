@@ -18,17 +18,17 @@ Task 2:
 
     total = O(2n)+ O(n*n) => O(n(2+n))
 
-    worst case will be O(n_square)
+    worst case will be O(n*n)
 
 Task 3:
     for 1st loop : O(n)
-    sort = O(n log(n))
+    for sort : O(n log(n))
     for 2nd loop : O(n)
     for 3rd loop : O(n)
 
-    total = O(3n) + O(n log(n)) => O(n(3+log(n))
+    total = O(3n) + O(n log(n))
 
-    worst case will be O(n)
+    worst case will be O(n log(n)) because O(n log(n)) is a superset of O(n)
 
 
 Task 4:
@@ -40,6 +40,6 @@ Task 4:
 
     total = O(4n) + O(n log(n))
 
-    worst case will be O(n)
+    worst case will be O(n log(n)) because O(n log(n)) is a superset of O(n)
 
 
