@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f802fbd-7d43-41db-8501-c10f34695bd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/with_python/DS_2_Stacks_Queues/ps_1_balanced_paranthesis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
-  <component name="RunManager" selected="Python.stack_imp_linklist">
+  <component name="RunManager" selected="Python.ps_1_balanced_paranthesis">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="LearnDSandAlgo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -73,7 +72,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="stack" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ps_1_balanced_paranthesis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LearnDSandAlgo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -81,11 +80,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/with_python/Stacks_Queues" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/with_python/DS_2_Stacks_Queues" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/with_python/Stacks_Queues/stack.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/with_python/DS_2_Stacks_Queues/ps_1_balanced_paranthesis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,19 +153,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.Unnamed" />
-      <item itemvalue="Python.stack" />
       <item itemvalue="Python tests.pytest in add-one.py" />
       <item itemvalue="Python.add-one" />
       <item itemvalue="Python.stack_imp_array" />
       <item itemvalue="Python.stack_imp_linklist" />
+      <item itemvalue="Python.ps_1_balanced_paranthesis" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ps_1_balanced_paranthesis" />
         <item itemvalue="Python.stack_imp_linklist" />
         <item itemvalue="Python.stack_imp_array" />
         <item itemvalue="Python.add-one" />
         <item itemvalue="Python tests.pytest in add-one.py" />
-        <item itemvalue="Python.stack" />
       </list>
     </recent_temporary>
   </component>
@@ -192,21 +191,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1007" y="420" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1589756967328" />
-    <state width="1038" height="279" key="GridCell.Tab.0.bottom" timestamp="1589758321682">
+    <state width="1899" height="279" key="GridCell.Tab.0.bottom" timestamp="1589758960653">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1038" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589758321682" />
-    <state width="1038" height="279" key="GridCell.Tab.0.center" timestamp="1589758321681">
+    <state width="1899" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589758960653" />
+    <state width="1899" height="279" key="GridCell.Tab.0.center" timestamp="1589758960652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1038" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589758321681" />
-    <state width="1038" height="279" key="GridCell.Tab.0.left" timestamp="1589758321681">
+    <state width="1899" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589758960652" />
+    <state width="1899" height="279" key="GridCell.Tab.0.left" timestamp="1589758960652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1038" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589758321681" />
-    <state width="1038" height="279" key="GridCell.Tab.0.right" timestamp="1589758321682">
+    <state width="1899" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589758960652" />
+    <state width="1899" height="279" key="GridCell.Tab.0.right" timestamp="1589758960653">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1038" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589758321682" />
+    <state width="1899" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589758960653" />
   </component>
 </project>
