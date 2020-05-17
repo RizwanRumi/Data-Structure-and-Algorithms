@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f802fbd-7d43-41db-8501-c10f34695bd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/with_python/DS_2_Stacks_Queues/ps_2_reverse_polish_notation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with_python/DS_2_Stacks_Queues/ps_3_reverse_a_stack.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +30,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
-  <component name="RunManager" selected="Python.ps_2_reverse_polish_notation">
+  <component name="RunManager" selected="Python.ps_3_reverse_a_stack">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="LearnDSandAlgo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,7 +94,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="stack_imp_array" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ps_3_reverse_a_stack" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LearnDSandAlgo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,7 +106,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="E:\LearnDSandAlgo\with_python\DS_2_Stacks_Queues\stack_imp_array.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/with_python/DS_2_Stacks_Queues/ps_3_reverse_a_stack.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,19 +154,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.Unnamed" />
-      <item itemvalue="Python.stack_imp_array" />
       <item itemvalue="Python.stack_imp_linklist" />
       <item itemvalue="Python.ps_1_balanced_paranthesis" />
       <item itemvalue="Python tests.pytest in ps_2_reverse_polish_notation.py" />
       <item itemvalue="Python.ps_2_reverse_polish_notation" />
+      <item itemvalue="Python.ps_3_reverse_a_stack" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ps_3_reverse_a_stack" />
         <item itemvalue="Python.ps_2_reverse_polish_notation" />
         <item itemvalue="Python tests.pytest in ps_2_reverse_polish_notation.py" />
         <item itemvalue="Python.ps_1_balanced_paranthesis" />
         <item itemvalue="Python.stack_imp_linklist" />
-        <item itemvalue="Python.stack_imp_array" />
       </list>
     </recent_temporary>
   </component>
@@ -188,25 +188,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589756934456" />
+    <state x="691" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589759655199">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="691" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589759655199" />
     <state x="1007" y="420" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1589756967328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1007" y="420" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1589756967328" />
-    <state width="1899" height="279" key="GridCell.Tab.0.bottom" timestamp="1589758960653">
+    <state width="1899" height="279" key="GridCell.Tab.0.bottom" timestamp="1589759415467">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589758960653" />
-    <state width="1899" height="279" key="GridCell.Tab.0.center" timestamp="1589758960652">
+    <state width="1899" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589759415467" />
+    <state width="1899" height="279" key="GridCell.Tab.0.center" timestamp="1589759415467">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589758960652" />
-    <state width="1899" height="279" key="GridCell.Tab.0.left" timestamp="1589758960652">
+    <state width="1899" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589759415467" />
+    <state width="1899" height="279" key="GridCell.Tab.0.left" timestamp="1589759415466">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589758960652" />
-    <state width="1899" height="279" key="GridCell.Tab.0.right" timestamp="1589758960653">
+    <state width="1899" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589759415466" />
+    <state width="1899" height="279" key="GridCell.Tab.0.right" timestamp="1589759415467">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589758960653" />
+    <state width="1899" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589759415467" />
   </component>
 </project>
