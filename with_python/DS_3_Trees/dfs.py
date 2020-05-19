@@ -248,3 +248,56 @@ print(f"pre-order traversal visited nodes in this order: {visit_order}")
 print(f"""stack
 {stack}""")
 
+"""
+pre-order traversal using a stack (something's missing)
+Here is some code that has an error, so it will have an infinite loop.
+There is a counter to make the loop stop so that it doesn't run forever.
+"""
+
+
+def pre_order_with_stack_buggy(tree):
+    visit_order = list()
+    stack = Stack()
+    node = tree.get_root()
+    stack.push(node)
+    node = stack.top()
+    visit_order.append(node.get_value())
+    count = 0
+    loop_limit = 7
+    while (node and count < loop_limit):
+        print(f"""
+loop count: {count}
+current node: {node}
+stack:
+{stack}
+        """)
+        count += 1
+        if node.has_left_child():
+            node = node.get_left_child()
+            stack.push(node)
+            # using top() is redundant, but added for clarity
+            node = stack.top()
+            visit_order.append(node.get_value())
+
+        elif node.has_right_child():
+            node = node.get_right_child()
+            stack.push(node)
+            node = stack.top()
+            visit_order.append(node.get_value())
+
+        else:
+            stack.pop()
+            if not stack.is_empty():
+                node = stack.top()
+            else:
+                node = None
+
+    return visit_order
+
+
+dfs_visited = pre_order_with_stack_buggy(tree)
+
+for val in dfs_visited:
+    print(val)
+
+
