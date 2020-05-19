@@ -415,3 +415,29 @@ recusrion_result = pre_order(tree)
 
 for val in recusrion_result:
     print(val)
+
+print("------ in-order traversing----")
+
+
+def in_order(tree):
+    visit_order = list()
+
+    def traverse(node):
+        if node:
+            # traverse left subtree
+            traverse(node.get_left_child())
+
+            # visit node
+            visit_order.append(node.get_value())
+
+            # traverse right sub-tree
+            traverse(node.get_right_child())
+
+    traverse(tree.get_root())
+
+    return visit_order
+
+in_order_result = in_order(tree)
+
+for val in in_order_result:
+    print(val)
