@@ -5,9 +5,9 @@ Example:    apple
              /\
             /  \
        banana   cherry
-          /
-         /
-      dates
+          /\
+         /  \
+      dates  orange
 """
 
 
@@ -63,6 +63,7 @@ tree = Tree("apple")
 tree.get_root().set_left_child(Node("banana"))
 tree.get_root().set_right_child(Node("cherry"))
 tree.get_root().get_left_child().set_left_child(Node("dates"))
+tree.get_root().get_left_child().set_right_child(Node("orange"))
 
 """
     Pre-order traversal with a stack
@@ -384,7 +385,7 @@ stack:
             """)
     return visit_order
 
-# check pre-order traversal
+print("-------Pre-order traverse---------")
 pre_order_result = pre_order_with_stack(tree, debug_mode=True)
 
 for val in pre_order_result:
@@ -440,4 +441,30 @@ def in_order(tree):
 in_order_result = in_order(tree)
 
 for val in in_order_result:
+    print(val)
+
+
+print("--------Post-order traversing---------")
+
+def post_order(tree):
+    visit_order = list()
+
+    def traverse(node):
+        if node:
+            # traverse left subtree
+            traverse(node.get_left_child())
+
+            # traverse right subtree
+            traverse(node.get_right_child())
+
+            # visit node
+            visit_order.append(node.get_value())
+
+    traverse(tree.get_root())
+
+    return visit_order
+
+post_order_result = post_order(tree)
+
+for val in post_order_result:
     print(val)
