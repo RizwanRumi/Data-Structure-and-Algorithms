@@ -389,3 +389,29 @@ pre_order_result = pre_order_with_stack(tree, debug_mode=True)
 
 for val in pre_order_result:
     print(val)
+
+print("------Pre-order traverse with recursion------")
+
+
+def pre_order(tree):
+    visit_order = list()
+
+    def traverse(node):
+        if node:
+            # visit the node
+            visit_order.append(node.get_value())
+
+            # traverse left subtree
+            traverse(node.get_left_child())
+
+            # traverse right subtree
+            traverse(node.get_right_child())
+
+    traverse(tree.get_root())
+
+    return visit_order
+
+recusrion_result = pre_order(tree)
+
+for val in recusrion_result:
+    print(val)
