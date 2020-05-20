@@ -12,6 +12,7 @@ Use : Queue
 
 from collections import deque
 
+
 class Node(object):
 
     def __init__(self, value=None):
@@ -155,13 +156,33 @@ class Tree():
             else:
                 node.set_right_child(new_node)
 
+    def search(self, value):
+        node = self.get_root()
+        s_node = Node(value)
+
+        while True:
+            comparison = self.compare(node, s_node)
+            if comparison == 0:
+                return True
+            elif comparison == -1:
+                if node.has_left_child():
+                    node = node.get_left_child()
+                else:
+                    return False
+            else:
+                if node.has_right_child():
+                    node = node.get_right_child()
+                else:
+                    return False
+
     def __repr__(self):
         level = 0
         q = Queue()
         visit_order = list()
         node = self.get_root()
         q.enq((node, level))
-        while (len(q) > 0):
+
+        while len(q) > 0:
             node, level = q.deq()
             if node == None:
                 visit_order.append(("<empty>", level))
@@ -197,9 +218,8 @@ tree.insert_with_loop(5)
 tree.insert_with_loop(6)
 tree.insert_with_loop(4)
 tree.insert_with_loop(2)
-tree.insert_with_loop(5) # insert duplicate
+tree.insert_with_loop(5)  # insert duplicate
 print(tree)
-
 
 print("\n -------- insert with recursion -------")
 
@@ -208,6 +228,19 @@ tree.insert_with_recursion(5)
 tree.insert_with_recursion(6)
 tree.insert_with_recursion(4)
 tree.insert_with_recursion(2)
-tree.insert_with_recursion(5) # insert duplicate
+tree.insert_with_recursion(5)  # insert duplicate
 print(tree)
 
+print("\n ----- search -------")
+
+tree = Tree()
+tree.insert_with_loop(5)
+tree.insert_with_loop(6)
+tree.insert_with_loop(4)
+tree.insert_with_loop(2)
+
+print(f"""
+search for 8: {tree.search(8)}
+search for 2: {tree.search(2)}
+""")
+print(tree)
