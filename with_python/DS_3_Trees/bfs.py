@@ -67,7 +67,7 @@ tree.get_root().set_right_child(Node("Cherry"))
 tree.get_root().get_left_child().set_left_child(Node("Dates"))
 tree.get_root().get_left_child().set_right_child(Node("Orange"))
 
-# # queue for bfs
+# queue for bfs
 # from collections import deque
 # q = deque()
 # q.appendleft("apple")
@@ -120,6 +120,7 @@ print(q.deq())
 print(q)
 '''
 
+'''
 visit_order = list()
 q = Queue()
 
@@ -193,3 +194,44 @@ if node.has_right_child():
 
 print(f"visit order: {visit_order}")
 print(q)
+'''
+
+"""
+Queue -> Enqueue: (insert) and Dequeue: (remove)
+
+BFS implementation step:
+# queue
+# visit order list
+# start at root
+# add root to queue
+# while queue is not empty:
+    # dequeue the node
+    # visit the node
+    # add the left child if exist
+    # add the right child if exist
+#return the visit order
+"""
+
+
+def bfs(tree):
+    q = Queue()
+    visit_order = list()
+    node = tree.get_root()
+    q.enq(node)
+
+    while len(q) > 0:
+        node = q.deq()
+        visit_order.append(node)
+
+        if node.has_left_child():
+            q.enq(node.get_left_child())
+
+        if node.has_right_child():
+            q.enq(node.get_right_child())
+
+    return visit_order
+
+visit_list = bfs(tree)
+
+for val in visit_list:
+    print(val)
