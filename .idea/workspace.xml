@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f802fbd-7d43-41db-8501-c10f34695bd7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/with_python/DS_3_Trees/bst.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/with_python/DS_3_Trees/bfs.py" beforeDir="false" afterPath="$PROJECT_DIR$/with_python/DS_3_Trees/bfs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +30,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
-  <component name="RunManager" selected="Python.bfs">
+  <component name="RunManager" selected="Python.bst">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="LearnDSandAlgo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,6 +94,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="bst" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LearnDSandAlgo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/with_python/DS_3_Trees" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/with_python/DS_3_Trees/bst.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="dfs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LearnDSandAlgo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,42 +157,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="queue_imp_stack" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LearnDSandAlgo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/with_python/DS_2_Stacks_Queues" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/with_python/DS_2_Stacks_Queues/queue_imp_stack.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.Unnamed" />
-      <item itemvalue="Python.queue_imp_stack" />
       <item itemvalue="Python.ps_5_reverse_a_queue" />
       <item itemvalue="Python.binary_tree" />
       <item itemvalue="Python.dfs" />
       <item itemvalue="Python.bfs" />
+      <item itemvalue="Python.bst" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bst" />
         <item itemvalue="Python.bfs" />
         <item itemvalue="Python.dfs" />
         <item itemvalue="Python.binary_tree" />
         <item itemvalue="Python.ps_5_reverse_a_queue" />
-        <item itemvalue="Python.queue_imp_stack" />
       </list>
     </recent_temporary>
   </component>
@@ -205,22 +205,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1007" y="420" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1589756967328" />
-    <state width="991" height="280" key="GridCell.Tab.0.bottom" timestamp="1589986376570">
+    <state width="991" height="280" key="GridCell.Tab.0.bottom" timestamp="1589987701509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="991" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589986376570" />
-    <state width="991" height="280" key="GridCell.Tab.0.center" timestamp="1589986376570">
+    <state width="991" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589987701509" />
+    <state width="991" height="280" key="GridCell.Tab.0.center" timestamp="1589987701509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="991" height="280" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589986376570" />
-    <state width="991" height="280" key="GridCell.Tab.0.left" timestamp="1589986376570">
+    <state width="991" height="280" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589987701509" />
+    <state width="991" height="280" key="GridCell.Tab.0.left" timestamp="1589987701509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="991" height="280" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589986376570" />
-    <state width="991" height="280" key="GridCell.Tab.0.right" timestamp="1589986376570">
+    <state width="991" height="280" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589987701509" />
+    <state width="991" height="280" key="GridCell.Tab.0.right" timestamp="1589987701509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="991" height="280" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589986376570" />
+    <state width="991" height="280" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589987701509" />
     <state width="1038" height="347" key="GridCell.Tab.1.bottom" timestamp="1589934526507">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -237,5 +237,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1038" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589934526507" />
+    <state x="1077" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1589987730182">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1077" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589987730182" />
   </component>
 </project>
